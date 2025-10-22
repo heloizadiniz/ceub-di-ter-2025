@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <script>
+        window.onload = function(){
+
+console.log("oi")
+const input = document.getElementById("tarefaInput");
+const btnAdicionar = document.getElementById("btnAdicionar");
+const lista =document.getElementById("listaTarefas");
+
+btnAdicionar.addEventListener("click", () => {
+    const texto = input.value.trim();
+
+    const li = document.createElement("li");
+    li.textContent = texto;
+
+    lista.appendChild(li);
+
+});
+}
+
+    </script>
+    <title>To do</title>
+</head>
+<body>
+    <h1>Minha lista de tarefas kkk</h1>
+    
+    <div class="input-area">
+        <input type="text" 
+               id="tarefaInput" 
+               placeholder="Digite sua tarefa!">
+    <button id="btnAdicionar"> Adicionar</button>
+
+    </div>
+
+    <ul id="listaTarefas"></ul>
+</body>
+</html>
