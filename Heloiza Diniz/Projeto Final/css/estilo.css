@@ -23,6 +23,7 @@
     justify-content: space-around;
     align-items: center;
     color: var(--text-color);
+    
 }
 
 h2 {
@@ -41,14 +42,14 @@ h2 {
 }
 
 #subscription-form {
-    background-color: var(--secondary);
+    background-color:var(--secondary);
     padding: 1em;
     /* max-width: 22%; */
 }
 
 #subscription-form p {
     font-size: 1.5em;
-    color: var(--text-secondary);
+    color: var(--text-tertiary);
     margin-bottom: 1em;
 }
 
@@ -142,16 +143,19 @@ h2 {
 
 #about {
     height: 400px;
-    background-color: var(--text-color);
+    background: linear-gradient(rgba(168, 31, 31, 0.8), rgba(0, 0, 0, 0.8)), url("..//img/logos/pawel-czerwinski-dgJT71cXlC4-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: var(--text-tertiary);
+    color: white;
     margin-bottom: 3em;
 }
 
 #about-id, #about-description {
     max-width:  40%;
+    
 }
 
 #about-id {
@@ -161,13 +165,13 @@ h2 {
 }
 
 #about-id i {
-    color: var(--text-tertiary);
+    color: var(--text-color);
     font-size: 6em;
     margin-right: 0.5em;
 }
 
 #about-description h3{
-    color: var(--text-tertiary);
+    color: var(--text-color);
     font-size: 1.5em;
     margin-bottom: 1em;
     text-transform: uppercase;
@@ -177,4 +181,70 @@ h2 {
     text-align: justify;
     font-size: 0.8em;
     line-height: 1.5em;
+    
+  }
+
+/* Projetos */
+
+#projects {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .project {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: space-between; /* adiciona o espaço igual entre os elementos */
+    gap: 5%;
+    margin-bottom: 4em;
+  }
+  .project img {
+    width: auto;
+    max-width: 50%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .project h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2em;
+    color: var(--text-color);
+  }
+  .project-description {
+    width: 100%;
+    padding-left: 2em;
+  }
+  .project-description ul {
+    list-style-position: inside;
+  }
+  .project-description ul li {
+    margin-bottom: 1em;
+  }
+  .project-description ul li:last-child {
+    font-weight: bold;
+  }
+
+  /* Rodapé */
+  #footer{
+    background-color: #E59A94;
+    text-align: center;
+    color: #331412;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  #footer a {
+    color: var(--text-tertiary);
+    margin: 8px;
+  }
+
+  #footer h3{
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
   }
